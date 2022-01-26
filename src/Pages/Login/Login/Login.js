@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Header from '../../Shared/Header/Header';
 import { Form } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button'
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
@@ -37,48 +38,53 @@ const Login = () => {
         signInWithGoogle(location, navigate)
     }
     return (
-        <div className="col-lg-4 col-10 mx-auto border rounded-3 shadow-lg my-5 p-3" data-aos="fade-left" data-aos-duration="3000">
-            <h3 className="fw-light fst-italic text-center my-3">User Login</h3>
-            <Form className="px-3" onSubmit={handleLoginSubmit}>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email"
-                        placeholder="Your Email"
-                        name="email"
-                        onChange={handleOnChange} />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type="password"
-                        placeholder="Your Password"
-                        name="password"
-                        onChange={handleOnChange} />
-                </Form.Group>
-                <Button variant="warning" type="submit">Sign in</Button>
-            </Form>
+        <div>
+            <Header />
+
+            <div className="col-lg-4 col-10 mx-auto border rounded-3 shadow-lg my-5 p-3" data-aos="fade-left" data-aos-duration="3000">
+
+                <h3 className="fw-light fst-italic text-center my-3">User Login</h3>
+                <Form className="px-3" onSubmit={handleLoginSubmit}>
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Label>Email address</Form.Label>
+                        <Form.Control type="email"
+                            placeholder="Your Email"
+                            name="email"
+                            onChange={handleOnChange} />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                        <Form.Label>Password</Form.Label>
+                        <Form.Control type="password"
+                            placeholder="Your Password"
+                            name="password"
+                            onChange={handleOnChange} />
+                    </Form.Group>
+                    <Button variant="warning" type="submit">Sign in</Button>
+                </Form>
 
 
-            <NavLink className="text-decoration-none" to="/register">
-                <p className="text-center fw-bold my-3">New User? First register, please.</p>
-            </NavLink>
+                <NavLink className="text-decoration-none" to="/register">
+                    <p className="text-center fw-bold my-3">New User? First register, please.</p>
+                </NavLink>
 
-            <div className="mx-auto text-center">
-                {isLoading && <div className="spinner-border text-primary" role="status">
-                    <span className="visually-hidden">Loading...</span>
-                </div>}
+                <div className="mx-auto text-center">
+                    {isLoading && <div className="spinner-border text-primary" role="status">
+                        <span className="visually-hidden">Loading...</span>
+                    </div>}
 
-                {user?.email && <div className="alert alert-success" role="alert">Login successfully!
-                </div>}
+                    {user?.email && <div className="alert alert-success" role="alert">Login successfully!
+                    </div>}
 
-                {authError && <div className="alert alert-danger" role="alert">{authError}
-                </div>}
+                    {authError && <div className="alert alert-danger" role="alert">{authError}
+                    </div>}
 
-                <hr />
+                    <hr />
 
-                <Button variant="outline-primary" onClick={handleGoogleSignIn}>Sign in using Google</Button>
-            </div>
+                    <Button variant="outline-primary" onClick={handleGoogleSignIn}>Sign in using Google</Button>
+                </div>
 
-        </div >
+            </div >
+        </div>
     );
 };
 

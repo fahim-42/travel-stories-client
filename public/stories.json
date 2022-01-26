@@ -1,0 +1,68 @@
+[
+    {
+        "title": "Teknaf Beach",
+        "image": "https://i.ibb.co/Bt310jy/teknaf.jpg",
+        "description": "Teknaf Beach is a part of Cox's Bazar Beach, located at Teknaf Upazila of Cox's bazar district. Teknaf beach is surrounded by the Teknaf peninsula mangrove area. This beach is divided into sections; Shamlapur Beach, Shilakhali Beach, and Hajampara Beach.",
+        "experience": "",
+        "location": "Chittagong",
+        "expense": "6500",
+        "date": "01/01/2022",
+        "rating": "4.5",
+        "status": "approved"
+    },
+    {
+        "title": "Sajek Valley",
+        "image": "https://i.ibb.co/hC1gfVs/sajek.jpg",
+        "description": "Sajek Valley is one of the popular tourist spots in Bangladesh situated among the hills of the Kasalong range of mountains in Sajek union, Baghaichhari Upazila in Rangamati District. The valley is 2,000 feet above sea level. Sajek valley is known as the Queen of Hills & Roof of Rangamati.",
+        "experience": "I has a very good experience. Local people were very helpful and kind. Food were very affordable and healthy. Travel cost was reasonable.",
+        "location": "Rangamati",
+        "expense": "5300",
+        "date": "05/11/2021",
+        "rating": "3.8",
+        "status": "approved"
+    },
+    {
+        "title": "Sundarban",
+        "image": "https://i.ibb.co/5kJdtVj/sundarban.jpg",
+        "description": "Sundarbans is a mangrove area in the delta formed by the confluence of the Ganges, Brahmaputra and Meghna Rivers in the Bay of Bengal. It spans from the Hooghly River in India's state of West Bengal to the Baleswar River in Bangladesh's division of Khulna.",
+        "experience": "I has a very good experience. Local people were very helpful and kind. Food were very affordable and healthy. Travel cost was reasonable.",
+        "location": "Khulna",
+        "expense": "4600",
+        "date": "21/12/2021",
+        "rating": "4.9",
+        "status": "pending"
+    },
+    {
+        "title": "St. Martin's Island",
+        "image": "https://i.ibb.co/NZ90P21/saintmartin.jpg",
+        "description": "St. Martin's Island is a small island in the northeastern part of the Bay of Bengal, about 9 km south of the tip of the Cox's Bazar-Teknaf peninsula, and forming the southernmost part of Bangladesh. There is a small adjoining island that is separated at high tide, called Chera Dwip.",
+        "experience": "I has a very good experience. Local people were very helpful and kind. Food were very affordable and healthy. Travel cost was reasonable.",
+        "location": "Bay of Bengal",
+        "expense": "7400",
+        "date": "18/11/2020",
+        "rating": "4.2",
+        "status": "pending"
+    },
+    {
+        "title": "Ratargul Swamp Forest",
+        "image": "https://i.ibb.co/sjJF1KW/ratargul.png",
+        "description": "Ratargul Swamp Forest is a freshwater swamp forest located in Gowain River, Fatehpur Union, Gowainghat, Sylhet, Bangladesh. It is the only swamp forest located in Bangladesh and one of the few freshwater swamp forests in the world.",
+        "experience": "I has a very good experience. Local people were very helpful and kind. Food were very affordable and healthy. Travel cost was reasonable.",
+        "location": "Sylhet",
+        "expense": "2700",
+        "date": "25/08/2021",
+        "rating": "3.8",
+        "status": "pending"
+    },
+    {
+        "title": "Cox's Bazar",
+        "image": "https://i.ibb.co/wcJX1wF/coxsbazar.png",
+        "description": "Cox's Bazar is a town on the southeast coast of Bangladesh. It's known for its very long, sandy beachfront, stretching from Sea Beach in the north to Kolatoli Beach in the south. Aggameda Khyang monastery is home to bronze statues and centuries-old Buddhist manuscripts. South of town, the tropical rainforest of Himchari National Park has waterfalls and many birds. North, sea turtles breed on nearby Sonadia Island.",
+        "experience": "I has a very good experience. Local people were very helpful and kind. Food were very affordable and healthy. Travel cost was reasonable.",
+        "location": "Chittagong",
+        "expense": "5300",
+        "date": "31/12/2021",
+        "rating": "3.9",
+        "status": "pending"
+    }
+]

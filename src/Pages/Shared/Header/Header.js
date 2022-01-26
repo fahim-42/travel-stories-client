@@ -9,21 +9,21 @@ const Header = () => {
     const { user, logout } = useAuth();
     return (
         <div>
-            <Navbar bg="dark" variant="dark" sticky="top" collapseOnSelect expand="lg">
+            <Navbar bg="transparent" variant="light" sticky="top" collapseOnSelect expand="lg">
                 <Container>
-                    <Navbar.Brand as={Link} to="/home">Travel Stories</Navbar.Brand>
+                    <Navbar.Brand className="text-dark fw-bold" as={Link} to="/home">Travel Stories</Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
-                        <Nav.Link className="text-white" as={HashLink} to="/home">Home</Nav.Link>
-                        <Nav.Link className="text-white" as={HashLink} to="/stories">Stories</Nav.Link>
+                        <Nav.Link className="text-dark fw-bold" as={HashLink} to="/home">Home</Nav.Link>
+                        <Nav.Link className="text-dark fw-bold" as={HashLink} to="/home#stories">Stories</Nav.Link>
                         {user.email &&
-                            <Nav.Link className="text-white" as={HashLink} to="/dashboard">Dashboard</Nav.Link>}
+                            <Nav.Link className="text-dark fw-bold" as={HashLink} to="/dashboard">Dashboard</Nav.Link>}
                         {user.email ?
-                            <Nav.Link className="text-white" as={HashLink} onClick={logout} to="/login">Logout</Nav.Link> :
-                            <Nav.Link className="text-white" as={HashLink} to="/login">Login</Nav.Link>}
+                            <Nav.Link className="text-dark fw-bold" as={HashLink} onClick={logout} to="/login">Logout</Nav.Link> :
+                            <Nav.Link className="text-dark fw-bold" as={HashLink} to="/login">Login</Nav.Link>}
 
                         {user.email &&
-                            <Navbar.Text className="text-warning">
+                            <Navbar.Text className="text-warning fw-bold">
                                 Hi, {user?.displayName}
                             </Navbar.Text>}
                     </Navbar.Collapse>

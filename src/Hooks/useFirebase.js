@@ -14,7 +14,7 @@ const useFirebase = () => {
 
     const [admin, setAdmin] = useState(false);
     useEffect(() => {
-        const url = `http://localhost:3030/users/${user.email}`;
+        const url = `http://localhost:3050/users/${user.email}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setAdmin(data.admin))
@@ -111,7 +111,7 @@ const useFirebase = () => {
     const saveUser = (email, displayName, method) => {
         const user = { email, displayName };
 
-        const url = 'http://localhost:3030/users';
+        const url = 'http://localhost:3050/users';
         fetch(url, {
             method: method,
             headers: {
